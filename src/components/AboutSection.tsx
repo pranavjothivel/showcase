@@ -17,10 +17,10 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-5 text-muted-foreground text-lg leading-relaxed">
               <p>
-                I'm a computer science student with a deep interest in how systems work under the hood — from kernel internals and memory management to distributed infrastructure and networking.
+                I'm a computer science student with a deep interest in how systems work under the hood — from OS internals and resource management to cloud computing/distributed infrastructure and networking.
               </p>
               <p>
-                I spend my time writing low-level code, contributing to open-source projects, and building tools that push me closer to the metal. I'm currently looking for internship and full-time roles where I can tackle hard systems problems.
+                I spend my time writing code, working with others, and developing my skills. I'm currently looking for internship and full-time roles where I can tackle hard systems problems.
               </p>
             </div>
           </div>

@@ -12,13 +12,21 @@ const LandingSection = () => {
                 CS + Math Student · Software Engineer · Systems & Infrastructure
               </p>
             </ScrollReveal>
-            <ScrollReveal delay={0.4} enableParallax>
+            {/* <ScrollReveal delay={0.4} enableParallax>
               <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight">
                 I build things
                 <br />
                 close to the
                 <br />
                 metal.
+              </h1>
+            </ScrollReveal> */}
+            <ScrollReveal delay={0.4} enableParallax>
+              <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight">
+                {/* From metal to cloud */}
+                Source to
+                <br />
+                cloud.
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.6}>
