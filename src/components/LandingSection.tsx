@@ -41,7 +41,7 @@ const LandingSection = () => {
                 {/* circle variant: <div className="rounded-full ring-2 ring-border shadow-lg"><div className="w-80 h-80 overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 p-2 rounded-full"><img ... className="w-full h-full object-cover rounded-full" /></div></div> */}
                 <div className="w-80 h-80 overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 p-2 rounded-2xl">
                   <img
-                    src="/headshot-2.jpeg"
+                    src="/headshot.jpeg"
                     alt="Pranav Jothivel"
                     className="w-full h-full object-cover rounded-xl"
                   />
