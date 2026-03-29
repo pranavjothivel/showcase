@@ -4,5 +4,17 @@
     "description": "Real-time chat application built with Node.js, Socket.io, and MongoDB. Features user authentication via Passport.js, email integration with SendGrid, and a dynamic front-end served through Express and Handlebars.",
     "tags": ["Node.js", "Socket.io", "MongoDB", "Passport.js"],
     "github": "https://github.com/pranavjothivel/timetalk-web"
+  },
+  {
+    "title": "IoT Web Control Dashboard",
+    "description": "Browser-based control panel for hardware IoT devices, including an LED toggle, LCD message display, PIR motion alarm, Morse code sender, and an automated humidity controller with live threshold monitoring.",
+    "tags": ["Node.js", "Express", "jQuery", "REST API", "Particle Photon"],
+    "github": "https://github.com/pranavjothivel/iot"
+  },
+  {
+    "title": "PhoBot — Web-Controlled Robot",
+    "description": "Web-controlled robot with a browser UI for directional movement (WASD-style) and real-time sensor gauges for voltage and distance. Commands and sensor data are exchanged directly with the device via the Particle Cloud API.",
+    "tags": ["Node.js", "Socket.io", "Express", "jQuery", "Particle Photon", "Robotics"],
+    "github": "https://github.com/pranavjothivel/fa18-iot"
   }
 ]
