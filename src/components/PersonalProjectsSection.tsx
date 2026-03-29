@@ -1,15 +1,9 @@
 import { Github } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import type { PersonalProject } from "@/types/data";
+import personalProjectsData from "@/data/personal-projects.json";
 
-const personalProjects = [
-  {
-    title: "timetalk",
-    description:
-      "Real-time chat application built with Node.js, Socket.io, and MongoDB. Features user authentication via Passport.js, email integration with SendGrid, and a dynamic front-end served through Express and Handlebars.",
-    tags: ["Node.js", "Socket.io", "MongoDB", "Passport.js"],
-    github: "https://github.com/pranavjothivel/timetalk-web",
-  },
-];
+const personalProjects = personalProjectsData as PersonalProject[];
 
 const PersonalProjectsSection = () => {
   return (

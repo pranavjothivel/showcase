@@ -1,14 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import type { Project } from "@/types/data";
 
 interface ProjectCardProps {
-  project: {
-    title: string;
-    category: string;
-    description: string;
-    color: string;
-  };
+  project: Project;
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {

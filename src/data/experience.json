@@ -1,0 +1,37 @@
+[
+  {
+    "role": "Treasurer",
+    "company": "Stony Brook Computing Society",
+    "period": "May 2025 - Present",
+    "logoKey": "sbcs",
+    "description": "Managed $3,000+ in club finances by tracking budgets and processing reimbursements for 20+ events, ensuring accurate recordkeeping and timely university approvals. Collaborated with the executive board to plan spending and fundraising strategies for the annual hackathon, workshops, and club initiatives."
+  },
+  {
+    "role": "Software Engineer Intern",
+    "company": "BAE Systems, Inc.",
+    "period": "May 2025 - August 2025",
+    "logoKey": "bae_systems",
+    "description": "Worked on low-level C++ software for a FPGA embedded Linux system. Developed internal Python tooling to interface with Atlassian Jira API to produce actionable project progress insights. Engineered Jenkins pipelines and Docker container images for optimizing team workflows and automating development processes."
+  },
+  {
+    "role": "Mentoring Program Director",
+    "company": "Stony Brook Computing Society",
+    "period": "August 2024 - May 2025",
+    "logoKey": "sbcs",
+    "description": "Coordinated events and managed logistics for a mentoring cohort of 15+ mentors and 100+ mentees, organizing workshops, networking events, and field trips. Delivered presentations at general body meetings, communicating complex computing concepts and fostering an interactive learning environment."
+  },
+  {
+    "role": "Teaching Assistant",
+    "company": "Stony Brook University",
+    "period": "August 2024 - December 2024",
+    "logoKey": "stony_brook_university",
+    "description": "Conducted two weekly lab sessions for Introduction to Object-Oriented Programming, teaching core material and providing guidance on lecture topics. Supported the professor in scoring 100+ midterm and final exams, delivering detailed feedback to reinforce students' understanding of OOP and Java fundamentals."
+  },
+  {
+    "role": "IT Intern",
+    "company": "Lavner Education",
+    "period": "July 2024 - August 2024",
+    "logoKey": "lavner_education",
+    "description": "Instructed Python, Robotics, and STEM curricula to 15+ students, facilitating 100+ projects with live troubleshooting. Diagnosed and resolved software issues across 80+ devices, saving approximately one hour per device and ensuring uninterrupted operations."
+  }
+]
