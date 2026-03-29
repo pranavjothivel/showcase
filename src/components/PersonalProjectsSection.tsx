@@ -3,46 +3,11 @@ import ScrollReveal from "./ScrollReveal";
 
 const personalProjects = [
   {
-    title: "picoOS",
+    title: "timetalk",
     description:
-      "A hobby operating system written in C and x86 assembly. Features a custom bootloader, preemptive multitasking scheduler, and a basic VFS layer.",
-    tags: ["C", "x86 Assembly", "QEMU"],
-    github: "#",
-  },
-  {
-    title: "rustalloc",
-    description:
-      "A memory allocator library in Rust exploring slab, buddy, and arena allocation strategies with benchmarks against jemalloc.",
-    tags: ["Rust", "Systems Programming"],
-    github: "#",
-  },
-  {
-    title: "netprobe",
-    description:
-      "CLI network diagnostics tool using raw sockets. Implements traceroute, MTU discovery, and latency histograms with eBPF hooks.",
-    tags: ["C", "eBPF", "Linux"],
-    github: "#",
-  },
-  {
-    title: "k8s-autopilot",
-    description:
-      "Kubernetes operator that auto-scales workloads based on custom metrics from Prometheus, with predictive scaling using simple regression.",
-    tags: ["Go", "Kubernetes", "Prometheus"],
-    github: "#",
-  },
-  {
-    title: "tinyvm",
-    description:
-      "A stack-based virtual machine and bytecode compiler for a minimal language. Built to learn about instruction sets and code generation.",
-    tags: ["Rust", "Compilers"],
-    github: "#",
-  },
-  {
-    title: "dotfiles",
-    description:
-      "Meticulously crafted Neovim, tmux, and Zsh configs with a reproducible Nix-based setup for any machine in under 5 minutes.",
-    tags: ["Nix", "Shell", "Neovim"],
-    github: "#",
+      "Real-time chat application built with Node.js, Socket.io, and MongoDB. Features user authentication via Passport.js, email integration with SendGrid, and a dynamic front-end served through Express and Handlebars.",
+    tags: ["Node.js", "Socket.io", "MongoDB", "Passport.js"],
+    github: "https://github.com/pranavjothivel/timetalk-web",
   },
 ];
 
