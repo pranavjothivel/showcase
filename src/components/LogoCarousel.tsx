@@ -16,7 +16,8 @@ import {
   SiPostgresql,
   SiCplusplus,
   SiRedhat,
-  SiUbuntu
+  SiUbuntu,
+  SiJavascript
 } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -30,13 +31,14 @@ interface Technology {
 const technologies: Technology[] = [
   { name: "C", icon: SiC, color: "#A8B9CC" },
   { name: "C++", icon: SiCplusplus, color: "#00599C" },
-  { name: "Rust", icon: SiRust, color: "#CE422B" },
+  // { name: "Rust", icon: SiRust, color: "#CE422B" },
   { name: "Linux", icon: SiLinux, color: "#FCC624" },
   { name: "RHEL", icon: SiRedhat, color: "#EE0000" },
   { name: "Ubuntu", icon: SiUbuntu, color: "#E95420" },
   { name: "AWS", icon: FaAws, color: "#FF9900" },
-  { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5" },
-  { name: "Terraform", icon: SiTerraform, color: "#7B42BC" },
+  // { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5" },
+  // { name: "Terraform", icon: SiTerraform, color: "#7B42BC" },
+  { name: "JavaScript", icon: SiJavascript, color: "#ffe100" },
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
   { name: "React", icon: SiReact, color: "#61DAFB" },
   { name: "Next.js", icon: SiNextdotjs, color: { light: "#000000", dark: "#ffffff" } },
