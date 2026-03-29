@@ -20,7 +20,7 @@ const Navbar = () => {
       link.rel = "icon";
       document.getElementsByTagName("head")[0].appendChild(link);
     }
-    link.href = resolvedTheme === "dark" ? "/favicon-dark.svg" : "/favicon-light.svg";
+    link.href = resolvedTheme === "dark" ? "/assets/favicon-dark.svg" : "/assets/favicon-light.svg";
   }, [resolvedTheme, mounted]);
 
   const isDark = resolvedTheme === "dark";

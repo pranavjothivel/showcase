@@ -12,7 +12,7 @@ type Logo = {
 const DEFAULT_LOGO_WIDTH = 200;
 const DEFAULT_LOGO_HEIGHT = 44;
 
-const SBCS_LOGO: Logo = { src: "/logos/sbcs_computer_logo.png", width: 140, height: 32 };
+const SBCS_LOGO: Logo = { src: "/assets/logos/sbcs_computer_logo.png", width: 140, height: 32 };
 
 const experiences = [
   {
@@ -27,7 +27,7 @@ const experiences = [
     role: "Software Engineer Intern",
     company: "BAE Systems, Inc.",
     period: "May 2025 - August 2025",
-    logo: { src: "/logos/bae_systems.svg", width: 190, height: 56 } as Logo,
+    logo: { src: "/assets/logos/bae_systems.svg", width: 190, height: 56 } as Logo,
     description:
       "Worked on low-level C++ software for a FPGA embedded Linux system. \
       Developed internal Python tooling to interface with Atlassian Jira API to produce actionable project progress insights. \
@@ -45,7 +45,7 @@ const experiences = [
     role: "Teaching Assistant",
     company: "Stony Brook University",
     period: "August 2024 - December 2024",
-    logo: { src: "/logos/stony_brook_university_light_mode.png", width: 200, height: 62, className: "p-1 dark:bg-white" } as Logo,
+    logo: { src: "/assets/logos/stony_brook_university_light_mode.png", width: 200, height: 62, className: "p-1 dark:bg-white" } as Logo,
     description:
       "Conducted two weekly lab sessions for Introduction to Object-Oriented Programming, teaching core material and providing guidance on lecture topics. Supported the professor in scoring 100+ midterm and final exams, delivering detailed feedback to reinforce students' understanding of OOP and Java fundamentals.",
   },
@@ -53,7 +53,7 @@ const experiences = [
     role: "IT Intern",
     company: "Lavner Education",
     period: "July 2024 - August 2024",
-    logo: { src: "/logos/lavner_education.png", width: 110, height: 36 } as Logo,
+    logo: { src: "/assets/logos/lavner_education.png", width: 110, height: 36 } as Logo,
     description:
       "Instructed Python, Robotics, and STEM curricula to 15+ students, facilitating 100+ projects with live troubleshooting. Diagnosed and resolved software issues across 80+ devices, saving approximately one hour per device and ensuring uninterrupted operations.",
   },
