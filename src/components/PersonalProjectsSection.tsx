@@ -19,8 +19,8 @@ const PersonalProjectsSection = () => {
         </ScrollReveal>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {personalProjects.map((project, index) => (
-            <ScrollReveal key={project.title} delay={index * 0.15}>
-              <div className="group border border-border rounded-xl p-6 hover:bg-card transition-colors">
+            <ScrollReveal key={project.title} delay={index * 0.15} className="h-full">
+              <div className="group border border-border rounded-xl p-6 hover:bg-card transition-colors h-full flex flex-col">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="font-display text-lg font-bold">{project.title}</h3>
                 <a
@@ -34,7 +34,7 @@ const PersonalProjectsSection = () => {
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mt-auto">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
