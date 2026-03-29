@@ -24,14 +24,12 @@ const LandingSection = () => {
             <ScrollReveal delay={0.4} enableParallax>
               <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight">
                 {/* From metal to cloud */}
-                Source to
-                <br />
-                cloud.
+                Metal to cloud.
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.6}>
               <p className="text-muted-foreground text-lg max-w-md leading-relaxed">
-                Computer science student passionate about operating systems, low-level programming, and infrastructure. Seeking internship and full-time opportunities.
+                Computer science student passionate about operating systems, low-level programming, backend development, and infrastructure. Seeking internship and full-time opportunities.
               </p>
             </ScrollReveal>
           </div>
