@@ -22,30 +22,41 @@ import {
 import { FaAws } from 'react-icons/fa';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-interface Technology {
+type ReactIconTechnology = {
   name: string;
+  iconType: 'react-icon';
   icon: React.ElementType;
   color: string | { light: string; dark: string };
-}
+};
+
+type ImageTechnology = {
+  name: string;
+  iconType: 'image';
+  src: string;
+};
+
+type Technology = ReactIconTechnology | ImageTechnology;
 
 const technologies: Technology[] = [
-  { name: "C", icon: SiC, color: "#A8B9CC" },
-  { name: "C++", icon: SiCplusplus, color: "#00599C" },
-  // { name: "Rust", icon: SiRust, color: "#CE422B" },
-  { name: "Linux", icon: SiLinux, color: "#FCC624" },
-  { name: "RHEL", icon: SiRedhat, color: "#EE0000" },
-  { name: "Ubuntu", icon: SiUbuntu, color: "#E95420" },
-  { name: "AWS", icon: FaAws, color: "#FF9900" },
-  // { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5" },
-  // { name: "Terraform", icon: SiTerraform, color: "#7B42BC" },
-  { name: "JavaScript", icon: SiJavascript, color: "#ffe100" },
-  { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-  { name: "React", icon: SiReact, color: "#61DAFB" },
-  { name: "Next.js", icon: SiNextdotjs, color: { light: "#000000", dark: "#ffffff" } },
-  { name: "Docker", icon: SiDocker, color: "#2496ED" },
-  { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-  { name: "Git", icon: SiGit, color: "#F05032" },
-  { name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
+  { name: "C",          iconType: 'react-icon', icon: SiC,         color: "#A8B9CC" },
+  { name: "C++",        iconType: 'react-icon', icon: SiCplusplus, color: "#00599C" },
+  // { name: "Rust",    iconType: 'react-icon', icon: SiRust,      color: "#CE422B" },
+  { name: "Python",     iconType: 'image',      src: '/logos/python.svg' },
+  { name: "Linux",      iconType: 'react-icon', icon: SiLinux,     color: "#FCC624" },
+  { name: "RHEL",       iconType: 'react-icon', icon: SiRedhat,    color: "#EE0000" },
+  { name: "Ubuntu",     iconType: 'react-icon', icon: SiUbuntu,    color: "#E95420" },
+  { name: "AWS",        iconType: 'react-icon', icon: FaAws,       color: "#FF9900" },
+  { name: "Docker",     iconType: 'react-icon', icon: SiDocker,     color: "#2496ED" },
+  // { name: "Kubernetes", iconType: 'react-icon', icon: SiKubernetes, color: "#326CE5" },
+  // { name: "Terraform",  iconType: 'react-icon', icon: SiTerraform,  color: "#7B42BC" },
+  { name: "Jenkins",    iconType: 'image',      src: '/logos/jenkins.svg' },
+  { name: "JavaScript", iconType: 'react-icon', icon: SiJavascript, color: "#ffe100" },
+  { name: "TypeScript", iconType: 'react-icon', icon: SiTypescript, color: "#3178C6" },
+  { name: "React",      iconType: 'react-icon', icon: SiReact,      color: "#61DAFB" },
+  { name: "Next.js",    iconType: 'react-icon', icon: SiNextdotjs,  color: { light: "#000000", dark: "#ffffff" } },
+  { name: "Node.js",    iconType: 'react-icon', icon: SiNodedotjs,  color: "#339933" },
+  { name: "Git",        iconType: 'react-icon', icon: SiGit,        color: "#F05032" },
+  { name: "PostgreSQL", iconType: 'react-icon', icon: SiPostgresql, color: "#336791" },
 ];
 
 const LogoCarousel = () => {
@@ -192,10 +203,18 @@ const LogoCarousel = () => {
                   className="flex-shrink-0 flex items-center justify-center group"
                 >
                   <div className="flex flex-col items-center gap-2 p-3 rounded-lg bg-card/30 backdrop-blur-sm border border-border/40 hover:border-border transition-all duration-300 hover:bg-card/50 hover:scale-105 hover:shadow-lg min-w-[85px] hover:z-20 relative">
-                    <tech.icon
-                      className="w-7 h-7 transition-transform duration-300 group-hover:scale-110"
-                      style={{ color: getColor(tech.color, tech.name) }}
-                    />
+                    {tech.iconType === 'image' ? (
+                      <img
+                        src={tech.src}
+                        alt={tech.name}
+                        className="w-7 h-7 transition-transform duration-300 group-hover:scale-110 object-contain"
+                      />
+                    ) : (
+                      <tech.icon
+                        className="w-7 h-7 transition-transform duration-300 group-hover:scale-110"
+                        style={{ color: getColor(tech.color, tech.name) }}
+                      />
+                    )}
                     <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors text-center">
                       {tech.name}
                     </span>
