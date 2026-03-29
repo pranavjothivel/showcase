@@ -2,6 +2,7 @@
   "name": "showcase",
   "private": true,
   "version": "1.0.0",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
