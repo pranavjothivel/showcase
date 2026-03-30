@@ -11,7 +11,7 @@
     "company": "BAE Systems, Inc.",
     "period": "May 2025 - August 2025",
     "logoKey": "bae_systems",
-    "description": "Worked on low-level C++ software for a FPGA embedded Linux system. Developed internal Python tooling to interface with Atlassian Jira API to produce actionable project progress insights. Engineered Jenkins pipelines and Docker container images for optimizing team workflows and automating development processes."
+    "description": "Worked on low-level C++ software for an FPGA embedded Linux system. Developed internal Python tooling to interface with Atlassian Jira API to produce actionable project progress insights. Engineered Jenkins pipelines and Docker container images for optimizing team workflows and automating development processes."
   },
   {
     "role": "Mentoring Program Director",
