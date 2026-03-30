@@ -1,6 +1,6 @@
 import ScrollReveal from "./ScrollReveal";
 import ProjectCard from "./ProjectCard";
-import type { Project } from "@/types/data";
+import type { Project } from "@/types";
 import projectsData from "@/data/projects.json";
 
 const projects = projectsData as Project[];

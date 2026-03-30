@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Briefcase } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-import type { Experience, Logo } from "@/types/data";
+import type { Experience, Logo } from "@/types";
 import experienceData from "@/data/experience.json";
 import logosData from "@/data/experience-logos.json";
 

@@ -1,6 +1,6 @@
 import { Github } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-import type { PersonalProject } from "@/types/data";
+import type { PersonalProject } from "@/types";
 import personalProjectsData from "@/data/personal-projects.json";
 
 const personalProjects = personalProjectsData as PersonalProject[];
