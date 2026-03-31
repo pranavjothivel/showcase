@@ -1,11 +1,38 @@
-"use client";
-
-import { ThemeProvider } from "next-themes";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import Providers from "@/components/Providers";
 import "./globals.css";
+
+const SITE_URL = "https://pranavjothivel.com";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: "Pranav Jothivel",
+  description:
+    "Software engineer focused on building thoughtful, high-quality products. Explore my experience, projects, and work.",
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    title: "Pranav Jothivel",
+    description:
+      "Software engineer focused on building thoughtful, high-quality products. Explore my experience, projects, and work.",
+    url: SITE_URL,
+    siteName: "Pranav Jothivel",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Pranav Jothivel",
+    description:
+      "Software engineer focused on building thoughtful, high-quality products. Explore my experience, projects, and work.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function RootLayout({
   children,
@@ -14,18 +41,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <title>Pranav Jothivel</title>
-      </head>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <TooltipProvider>
-            <Toaster />
-            <Sonner />
-            {children}
-            <Analytics />
-          </TooltipProvider>
-        </ThemeProvider>
+        <Providers>
+          {children}
+          <Analytics />
+        </Providers>
       </body>
     </html>
   );
