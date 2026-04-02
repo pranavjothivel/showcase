@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import ScrollReveal from "./ScrollReveal";
 import type { PersonalProject } from "@/types";
 import personalProjectsData from "@/data/personal-projects.json";
@@ -28,7 +28,7 @@ const PersonalProjectsSection = () => {
                   className="text-muted-foreground hover:text-foreground transition-colors"
                   aria-label={`View ${project.title} on GitHub`}
                 >
-                  <Github className="w-4 h-4" />
+                  <FaGithub className="w-4 h-4" />
                 </a>
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
